@@ -1,11 +1,17 @@
 const express = require("express");
+const path = require("path");
+
 const app = express();
 const port = 3000;
 
+// === CORRECT VIEW ENGINE SETUP ===
+app.set("view engine", "ejs");
+app.set("views", path.join(__dirname, "views")); // ← MUST be "views" (plural)
+
 app.get("/", (req, res) => {
-  res.send("Hello From CampGound !");
+  res.render("home.ejs");
 });
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`Server running at http://localhost:${port}`);
 });
