@@ -8,3 +8,6 @@ Run: nodemon app.js (To check the boiler plate)
 Making views/home.ejs
 and : res.render("home.ejs")
 [varify at http://localhost:3000/]
+===========================================
+Now, creating the very basic Schema of "Campground Model", in: models/campground.js
+Then writing & checking code of our db conncetion in app.js.

@@ -1,6 +1,14 @@
 const express = require("express");
 const path = require("path");
 
+const mongoose = require("mongoose");
+mongoose.connect("mongodb://localhost:27017/mountain-camp");
+const db = mongoose.connection;
+db.on("error", console.error.bind(console, "connection error:"));
+db.once("open", () => {
+  console.log("Database connected");
+});
+
 const app = express();
 const port = 3000;
 
