@@ -11,3 +11,9 @@ and : res.render("home.ejs")
 ===========================================
 Now, creating the very basic Schema of "Campground Model", in: models/campground.js
 Then writing & checking code of our db conncetion in app.js.
+===========================================
+Let's hard code a route to enter first data in the db.
+and check it at : http://localhost:3000/makecampground
+also, check the update in db .i.e. using commands :
+i)use mountain-camp
+ii)db.campgrounds.find()
