@@ -17,3 +17,11 @@ and check it at : http://localhost:3000/makecampground
 also, check the update in db .i.e. using commands :
 i)use mountain-camp
 ii)db.campgrounds.find()
+===========================================
+Now, Let's test by feeding one entry using index.js and
+making new route "campgrounds" and making changes in route "makecampground" i.e.
+i. node seeds/index.js
+ii. nodemon app.js
+Then varify using :
+http://localhost:3000/campgrounds and
+db.campgrounds.find()

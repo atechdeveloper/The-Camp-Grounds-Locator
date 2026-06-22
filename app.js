@@ -21,13 +21,18 @@ app.get("/", (req, res) => {
   res.render("home.ejs");
 });
 
+app.get("/campgrounds", async (req, res) => {
+  const camps = await Campground.find({});
+  res.send(camps);
+});
+
 app.get("/makecampground", async (req, res) => {
-  const camp = new Campground({
-    title: "My Backyard",
-    description: "cheap camping",
-  });
-  await camp.save();
-  res.send(camp);
+  // const camp = new Campground({
+  //   title: "My Backyard",
+  //   description: "cheap camping",
+  // });
+  // await camp.save();
+  res.send("No campground created");
 });
 
 app.listen(port, () => {
