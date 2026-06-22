@@ -25,3 +25,10 @@ ii. nodemon app.js
 Then varify using :
 http://localhost:3000/campgrounds and
 db.campgrounds.find()
+===========================================
+Now, using loop fill the DB with all the 50 entries i.e. :
+i. node seeds/index.js
+ii. nodemon app.js
+Then varify using :
+http://localhost:3000/campgrounds and
+db.campgrounds.find()
