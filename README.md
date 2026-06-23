@@ -40,3 +40,11 @@ views/campgrounds/index.ejs
 then check the working of index.ejs
 finally loop over all the campgrounds in index.ejs, to display the titles, at the same route.ie. :
 http://localhost:3000/campgrounds
+===========================================
+Building Campground Show :
+setting up the "/campgrounds/:id" route(get) in app.js
+and making file : views/compgrounds/show.ejs
+and check it at a random address(fake id) :
+http://localhost:3000/campgrounds/asdfadsf
+Setting up the individual hyper-links against the titles on index.ejs, to go to the specific id details of the titles of campground
+Finally,alter show.ejs page to get the 'title' and 'location' in heading format.(when accessed via title index)
