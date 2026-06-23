@@ -32,3 +32,9 @@ ii. nodemon app.js
 Then varify using :
 http://localhost:3000/campgrounds and
 db.campgrounds.find()
+===========================================
+Building Campground Index :
+Deleting the "makecampground" route and setting up the get "campgrounds" route.
+Also all the index file in views i.e.
+views/campgrounds/index.ejs
+then check the working of index.ejs

@@ -22,17 +22,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/campgrounds", async (req, res) => {
-  const camps = await Campground.find({});
-  res.send(camps);
-});
-
-app.get("/makecampground", async (req, res) => {
-  // const camp = new Campground({
-  //   title: "My Backyard",
-  //   description: "cheap camping",
-  // });
-  // await camp.save();
-  res.send("No campground created");
+  const campgrounds = await Campground.find({});
+  res.render("campgrounds/index");
 });
 
 app.listen(port, () => {
