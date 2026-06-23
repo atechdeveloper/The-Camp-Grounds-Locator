@@ -38,3 +38,5 @@ Deleting the "makecampground" route and setting up the get "campgrounds" route.
 Also all the index file in views i.e.
 views/campgrounds/index.ejs
 then check the working of index.ejs
+finally loop over all the campgrounds in index.ejs, to display the titles, at the same route.ie. :
+http://localhost:3000/campgrounds
