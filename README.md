@@ -48,3 +48,8 @@ and check it at a random address(fake id) :
 http://localhost:3000/campgrounds/asdfadsf
 Setting up the individual hyper-links against the titles on index.ejs, to go to the specific id details of the titles of campground
 Finally,alter show.ejs page to get the 'title' and 'location' in heading format.(when accessed via title index)
+===========================================
+Making Campground New and Creat routes :
+Created a route to get form for creating new campground data in app.js at : app.get("/campgrounds/new" .....)
+Make : views/compgrounds/new.ejs,having form to add new data.
+Then make the basic get route to get data from form and display it raw form when added useing "add button".
