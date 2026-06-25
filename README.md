@@ -53,3 +53,6 @@ Making Campground New and Creat routes :
 Created a route to get form for creating new campground data in app.js at : app.get("/campgrounds/new" .....)
 Make : views/compgrounds/new.ejs,having form to add new data.
 Then make the basic get route to get data from form and display it raw form when added useing "add button".
+{After fixing the spelling of "compground" in new.ejs}
+and extenting the app.post, I got the display of the data which I used to enter in the form.
+Finally adding appropriate buttons on show.ejs & index.ejs
