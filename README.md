@@ -56,3 +56,13 @@ Then make the basic get route to get data from form and display it raw form when
 {After fixing the spelling of "compground" in new.ejs}
 and extenting the app.post, I got the display of the data which I used to enter in the form.
 Finally adding appropriate buttons on show.ejs & index.ejs
+===========================================
+Campground Edit & Update :
+We will build two routes one for the form and one for submitting it.
+We added : app.get("/campgrounds/:id/edit", .....
+Also make update the : edit.ejs
+Then install : npm i method-override &
+const methodOverride = require("method-override");
+app.use(methodOverride("\_method"));
+Then add the route : app.put("/campgrounds/:id" ...
+along with the necessary changes in show.ejs & edit.ejs
