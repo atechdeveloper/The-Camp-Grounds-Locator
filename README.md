@@ -66,3 +66,7 @@ const methodOverride = require("method-override");
 app.use(methodOverride("\_method"));
 Then add the route : app.put("/campgrounds/:id" ...
 along with the necessary changes in show.ejs & edit.ejs
+===========================================
+DELETE Route :
+Adding route is : app.delete("/campgrounds/:id", ....
+Then adding 'form' with delete button in : show.ejs

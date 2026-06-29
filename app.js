@@ -59,6 +59,12 @@ app.get("/campgrounds/:id", async (req, res) => {
   res.render("campgrounds/show", { campground });
 });
 
+app.delete("/campgrounds/:id", async (req, res) => {
+  const { id } = req.params;
+  await Campground.findByIdAndDelete(id);
+  res.redirect("/campgrounds");
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
