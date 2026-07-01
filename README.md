@@ -85,3 +85,13 @@ Adding BootStrap v5.1.3 in boilerplate.ejs
 First add & test the nevbar by adding it in boilerplate.ejs and then shift it in : /views/partials/navbar.ejs to keep the biolerplate.ejs smaller (clean code).
 Similarly made : /views/partials/footer.ejs
 Also remember to convert the 'body' of boilerplate into flex.
+===========================================
+Deleting & Re-populating DB :
+Just to make data clean by removing some unwanded entries.
+show dbs
+use mountain-camp
+db.dropDatabase()
+node app.js [To make it again]
+node seeds/index.js [To populate it again]
+http://localhost:3000/campgrounds [To varify the working]
+===========================================
