@@ -70,3 +70,12 @@ along with the necessary changes in show.ejs & edit.ejs
 DELETE Route :
 Adding route is : app.delete("/campgrounds/:id", ....
 Then adding 'form' with delete button in : show.ejs
+===========================================
+Adding Basic Layout :
+Using : npm i ejs-mate
+Remember to require ejs-mate in app.js
+Creat : campgrounds/layouts/boilerplate.ejs
+Write boilerplate.ejs with "BEFORE" & "AFTER" with <%- body %>
+Remove all the header contents included "body" tag, and replace header with :<% layout("layouts/boilerplate.ejs") %>,
+and hence also remove "body" and "html" tags from bottom.
+This alter ation is made in: index.ejs, edit.ejs, new.ejs, show.ejs.

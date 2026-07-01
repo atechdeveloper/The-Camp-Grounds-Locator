@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const ejsMate = require("ejs-mate");
 const methodOverride = require("method-override");
 const Campground = require("./models/campground.js");
 
@@ -15,6 +16,7 @@ const app = express();
 const port = 3000;
 
 // === CORRECT VIEW ENGINE SETUP ===
+app.engine("ejs", ejsMate);
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views")); // ← MUST be "views" (plural)
 
