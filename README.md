@@ -79,3 +79,9 @@ Write boilerplate.ejs with "BEFORE" & "AFTER" with <%- body %>
 Remove all the header contents included "body" tag, and replace header with :<% layout("layouts/boilerplate.ejs") %>,
 and hence also remove "body" and "html" tags from bottom.
 This alter ation is made in: index.ejs, edit.ejs, new.ejs, show.ejs.
+===========================================
+Navbar & Foooter Added:
+Adding BootStrap v5.1.3 in boilerplate.ejs
+First add & test the nevbar by adding it in boilerplate.ejs and then shift it in : /views/partials/navbar.ejs to keep the biolerplate.ejs smaller (clean code).
+Similarly made : /views/partials/footer.ejs
+Also remember to convert the 'body' of boilerplate into flex.
