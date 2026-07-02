@@ -9,7 +9,7 @@ const Campground = require("../models/campground");
 // Pexels API Key
 // ===============================
 const PEXELS_API_KEY =
-  "3mIneVtJotr0COB7Th6Vj0wNWQiRNhSX4mGxik9KE4mag8lc7C6TvU0K";
+  "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
 
 // ===============================
 
