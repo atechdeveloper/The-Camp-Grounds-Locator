@@ -95,3 +95,10 @@ node app.js [To make it again]
 node seeds/index.js [To populate it again]
 http://localhost:3000/campgrounds [To varify the working]
 ===========================================
+Adding Images :
+get API key from https://www.pexels.com/api/
+npm install axios
+Update models/compgrounds.js
+seeds/index.js &
+views/campgrounds/show.ejs
+===========================================

@@ -1,14 +1,36 @@
 <% layout("layouts/boilerplate.ejs") %>
-    <h1><%= campground.title %></h1>
-    <h2><%= campground.location %></h2>
-    <footer>
-      <p><a href="/campgrounds/<%= campground._id %>/edit"> Edit Campground </a></p>
-      <br />
-      <p>
-       <form action="/campgrounds/<%= campground._id %>?_method=DELETE" method="POST">
-      <button>Delete</button>
-      </form>
-      </p>
-      <a href="/campgrounds">All Campgrounds</a>
-    </footer>
- 
+
+<h1><%= campground.title %></h1>
+
+<img
+  src="<%= campground.image %>"
+  class="img-fluid rounded"
+  style="width: 500px; height: 350px; object-fit: cover"
+  alt="<%= campground.title %>"
+/>
+
+<h2><%= campground.location %></h2>
+
+<p><%= campground.description %></p>
+
+<p>
+  <strong>Price:</strong>
+  $<%= campground.price %>
+</p>
+
+<footer>
+  <p>
+    <a href="/campgrounds/<%= campground._id %>/edit"> Edit Campground </a>
+  </p>
+
+  <form
+    action="/campgrounds/<%= campground._id %>?_method=DELETE"
+    method="POST"
+  >
+    <button>Delete</button>
+  </form>
+
+  <br />
+
+  <a href="/campgrounds">All Campgrounds</a>
+</footer>
